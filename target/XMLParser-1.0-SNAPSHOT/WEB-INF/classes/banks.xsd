@@ -1,0 +1,103 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!--
+	 schema - корневой, прописан в XMLSchema (xmlns - keyword)
+ 	 targetNamespace - задаём наше пространство
+ 	 tns - обозначаем наше пространство
+-->
+<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+				targetNamespace="http://www.example.com/banks"
+				xmlns:tns="http://www.example.com/banks"
+				elementFormDefault="qualified">
+
+<!-- определение иерархии наследования-->
+
+<element name="bank" type="tns:Bank" abstract="true"/>
+<element name="commercialBank" type="tns:commercialBank" substitutionGroup="tns:bank"/>
+<element name="nationalBank" type="tns:nationalBank" substitutionGroup="tns:bank"/>
+
+<!--  корневой элемент -->
+<element name = "banks">
+	<complexType>
+		<sequence>
+			<!-- просто ссылаемся на абстрактный элемент -->
+			<element ref="tns:bank"
+					 minOccurs = "0"
+					 maxOccurs = "unbounded"/>
+		</sequence>
+	</complexType>
+</element>
+
+	<!-- начало объявления типов, находящихся в простанстве имён banks (не указываем его, т.к. elementFormDefault установлен в qualified) -->
+
+	<complexType name = "Bank">
+
+		<!-- all,sequence,choice-->
+		<sequence>
+			<element name = "name" type = "string"/>
+			<element name = "lastCurrencyUpdate" type="tns:lastCurrencyUpdate"/>
+		</sequence>
+
+		<attribute name = "country" type = "string" use = "optional" default="USA"/>
+
+
+	</complexType>
+
+	<!-- наследование от типа Bank -->
+	<complexType name="commercialBank">
+		<complexContent>
+			<extension base="tns:Bank">
+				<sequence>
+					<element name = "type" type = "tns:Type"/>
+					<element name = "accountID" type = "tns:accountID"/>
+					<element name = "amountOnDeposit" type = "tns:amountOnDeposit"/>
+					<element name = "hasSpecifiedAccounts" type="boolean"/>
+					<element name = "Profitability" type = "decimal"/>
+					<element name = "timeConstraints" type = "integer"/>
+				</sequence>
+				<attribute name = "depositor" type = "string" use = "required"/>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="nationalBank">
+		<complexContent>
+			<extension base="tns:Bank">
+				<sequence>
+					<element name="canEmitMoney" type="boolean"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<simpleType name = "Type" final = "restriction">
+		<restriction base = "string">
+			<enumeration value = "beforeDemand"/>
+			<enumeration value = "urgent"/>
+			<enumeration value = "counted"/>
+			<enumeration value = "collecting"/>
+			<enumeration value = "saving"/>
+			<enumeration value = "metallic"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="accountID">
+		<restriction base="ID">
+			<pattern value="[BUCSM]\d{5}"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="lastCurrencyUpdate">
+		<restriction base="dateTime">
+			<pattern value="(20[01][0-9]|202[0-1])-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-4]):([0-6][0-9]):([0-6][0-9])"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="amountOnDeposit">
+		<restriction base="decimal">
+			<maxInclusive value="200.123"/>
+			<maxInclusive value="555.55"/>
+		</restriction>
+	</simpleType>
+
+	</schema>
+

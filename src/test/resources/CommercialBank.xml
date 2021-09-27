@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.example.com/banks"
+	xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+
+	<commercialBank depositor="FBI" country="USA">
+		<name>Colk Bank Inc</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>beforeDemand</type>
+		<accountID>B27622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+</banks>

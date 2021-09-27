@@ -1,0 +1,178 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.example.com/banks"
+	xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+
+	<nationalBank>
+		<name>SB</name>
+		<lastCurrencyUpdate>2021-05-24T10:59:59</lastCurrencyUpdate>
+		<canEmitMoney>true</canEmitMoney>
+	</nationalBank>
+
+	<nationalBank>
+		<name>UB</name>
+		<lastCurrencyUpdate>2021-06-24T19:59:59</lastCurrencyUpdate>
+		<canEmitMoney>false</canEmitMoney>
+	</nationalBank>
+
+	<nationalBank>
+		<name>UB</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<canEmitMoney>true</canEmitMoney>
+	</nationalBank>
+
+	<commercialBank depositor="Flexus">
+		<name>RF Bank Inc</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>urgent</type>
+		<accountID>U22222</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="FBI" country="USA">
+		<name>Colk Bank Inc</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>beforeDemand</type>
+		<accountID>B27622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Tom">
+		<name>Invest Bank</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>metallic</type>
+		<accountID>M27622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="ABC" country="Sweden">
+		<name>Private bank Sweden</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>saving</type>
+		<accountID>S27622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="CBA">
+		<name>Limited Bank UK</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>collecting</type>
+		<accountID>C27622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="OPC">
+		<name>US Focused bank group</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>counted</type>
+		<accountID>C27665</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Fixic">
+		<name>Moscow Invest Bank</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>beforeDemand</type>
+		<accountID>B24622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="User">
+		<name>Palomino Crack</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>saving</type>
+		<accountID>S27422</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="GoldHolder">
+		<name>California open Bank</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>collecting</type>
+		<accountID>C27672</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="BMan">
+		<name>WorldWide Bank Hungary partner</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>beforeDemand</type>
+		<accountID>B37622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Boris" country="Poland">
+		<name>East-European Bank of Building in Poland</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>metallic</type>
+		<accountID>M47622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Undefined">
+		<name>Technical bank of Silicon Valley</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>metallic</type>
+		<accountID>M57622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Gregory">
+		<name>Chinese bank</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>beforeDemand</type>
+		<accountID>B22622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+	<commercialBank depositor="Lekko">
+		<name>Last</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>collecting</type>
+		<accountID>C77622</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+</banks>

@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.example.com/banks"
+	xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+
+	<nationalBank>
+		<name>SB</name>
+		<lastCurrencyUpdate>2021-05-24T10:59:59</lastCurrencyUpdate>
+		<canEmitMoney>true</canEmitMoney>
+	</nationalBank>
+
+	<commercialBank depositor="Flexus">
+		<name>RF Bank Inc</name>
+		<lastCurrencyUpdate>2021-08-22T16:59:59</lastCurrencyUpdate>
+		<type>urgent</type>
+		<accountID>U22222</accountID>
+		<amountOnDeposit>132</amountOnDeposit>
+		<hasSpecifiedAccounts>true</hasSpecifiedAccounts>
+		<Profitability>345</Profitability>
+		<timeConstraints>2222</timeConstraints>
+	</commercialBank>
+
+</banks>

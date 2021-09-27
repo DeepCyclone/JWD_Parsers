@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.example.com/banks"
+	xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+
+	<nationalBank>
+		<name>SB</name>
+		<lastCurrencyUpdate>2021-05-24T10:59:59</lastCurrencyUpdate>
+		<canEmitMoney>true</canEmitMoney>
+	</nationalBank>
+
+</banks>
